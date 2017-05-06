@@ -1,0 +1,17 @@
+.member:hover{
+    background-color: lemonchiffon;
+}
+.member{
+    padding-left:10px;
+}
+aside{
+    font-size: 75%;
+    color: grey;
+}
+.hint{
+    visibility: hidden;
+    color: grey;
+}
+body{
+    font-family: "Times New Roman";
+}

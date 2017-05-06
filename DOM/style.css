@@ -1,0 +1,244 @@
+@font-face {
+    font-family: customFont;
+    src: url(fonts/customFont.ttf);
+}
+
+@media screen {
+    body {
+        background-color: lemonchiffon;
+    }
+}
+
+@media all {
+    h1 {
+        font-variant: small-caps;
+        text-align: center;
+        overflow: hidden;
+        text-shadow: 0 0 tomato, 0 0 yellowgreen, 0 0 skyblue;
+        color: black;
+        transition: all 1s;
+        font-size: 30px;
+    }
+
+    h1:hover {
+        text-shadow: -400px 0 tomato,
+        400px 0 yellowgreen,
+        0 0 skyblue;
+        color: transparent;
+    }
+
+    h2 {
+        font-size: 3em;
+        text-align: center;
+        color: rgba(47, 216, 255, 0.6);
+    }
+
+    h3 {
+        text-shadow: 5px 5px lightgrey;
+        font-size: 30px;
+        text-align: center;
+        font-family: 'customFont';
+        color: hsla(239, 21%, 10%, 0.9)
+    }
+
+    .name {
+        font-size: 10pt;
+        text-align: center;
+        transition: all 1s;
+    }
+
+    .name:hover {
+
+        color: crimson;
+    }
+
+    article p {
+        line-height: 0.8;
+    }
+
+    .text100 {
+        font-size: 100%;
+    }
+
+    .text150 {
+        font-size: 150%;
+    }
+
+    .text_em {
+        font_size: 1em;
+    }
+
+    .text_percent {
+        font_size: 100%;
+    }
+
+    .text_pt {
+        font-size: 12pt;
+    }
+
+    .text_px {
+        font-size: 16px;
+    }
+
+    #jury > table {
+        background: linear-gradient(to bottom,skyblue, white);
+    }
+
+    /*#jury > table {
+        background-color: aqua;
+        box-shadow: 5px 5px 5px slategrey;
+    }*/
+
+    #prizes table * {
+        border-style: solid;
+        border-width: 1px;
+        border-radius: 5px;
+        background: radial-gradient(skyblue, white);
+
+    }
+
+    #prizes table {
+        border-style: none;
+
+    }
+
+    #social_networks > footer {
+        height: 300px;
+        width: 100%;
+        border-style: solid;
+    }
+
+    .facebook {
+        position: relative;
+        top: 0;
+        right: 0;
+        float: right;
+        margin: 20px;
+        transition: transform 2s;
+    }
+    .facebook:hover{
+        transform: skewX(30deg);
+    }
+
+
+    .youtube {
+        border-style: dotted;
+        margin: 20px;
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        transition: width 2s, height 2s, transform 2s;
+    }
+
+    .youtube:hover {
+        width: 300px;
+        height: 300px;
+        transform: rotate(360deg);
+    }
+
+    .twitter {
+        width: auto;
+        height: auto;
+        position: relative;
+        animation-name: example;
+        animation-duration: 6s;
+        animation-iteration-count: infinite;
+
+    }
+
+    input:required {
+        background-color: tomato;
+    }
+
+    :visited {
+        color: green;
+    }
+
+    a:not(:visited) {
+        color: black;
+    }
+
+    article:nth-child(2){
+        background: -webkit-gradient(linear,right top, right bottom, color-stop(0%,red), color-stop(50%, green), color-stop(100%, blue));
+        background: -moz-linear-gradient(top center, 0% red, 50% green, 100% blue);
+        background: linear-gradient( to top, 0% red, 50% green, 100% blue);
+    }
+    article:nth-child(2) h3{
+        color:white;
+        text-shadow: none;
+    }
+
+}
+
+@media print {
+    body h2 {
+        color: black;
+    }
+}
+
+@keyframes example {
+    from   {left:0px; top:0px;}
+    25%  {left:300px; top:0px;}
+    50%  {left:300px; top:250px;}
+    75%  {left:0px; top:250px;}
+    to {left:0px; top:0px;}
+}
+
+.menu {
+    border-radius: 50px;
+    width:auto;
+    background-image: url(images/menu_tex.jpg);
+    position: relative;
+    margin-left:10%;
+    margin-right:10%;
+    box-shadow: 5px 5px  5px  gray;
+}
+.menu a{
+    text-decoration: none;
+    color:rgba(255,255,255,0.7);
+    text-shadow: none;
+    transition: all 1s;
+}
+.menu a:hover{
+    color: white;
+}
+
+#header{
+    background-image: url(images/bg.png), url(images/marble.jpg);
+    background-repeat: no-repeat, repeat;
+    background-size: 300px;
+    background-position: top left;
+    background-origin: content-box,border-box;
+    border: double 10px;
+}
+section{
+    border-image-source: url("images/menu_tex.jpg");
+    border:60px;
+}
+#page_nav{
+
+    margin-right: 20%;
+    margin-left: 20%;
+    border-width: 27px;
+    border-style: solid;
+    width: 60%;
+    border-image-source: url(images/border.png);
+    border-image-repeat: round;
+    border-image-slice: 34%;
+    text-align: center;
+}
+.cat_fade{
+    width: 100px;
+    height: 100px;
+    border: solid black;
+    position: relative;
+    left:0;
+}
+.cat_fade>img{
+    position: absolute;
+    left:0;
+    transition: opacity 2s ease;
+}
+.top_cat:hover{
+    opacity:0;
+}

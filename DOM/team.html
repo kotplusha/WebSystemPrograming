@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rejestracja do kategorji drużynowej</title>
+    <link rel="stylesheet" href="style_team.css" type="text/css"/>
+</head>
+<body>
+<header>
+    <section id="header">
+        <h1>&Alpha; &rho; &iota; &sigma; &tau; &omicron; &tau; &epsilon; &lambda; &eta; &sigmaf;-2016</h1>
+        <h2>Mistrzowstwa w programowaniu Aristotelis-2016</h2>
+        <article>Turniej jest organizowany przy wsparciu Polskiej Akademii Nauk od 1995 roku</article>
+    </section>
+    <hr>
+
+    <section id="navigation">
+        <nav>
+            <h3>
+                <a href="index.html">Główna</a>
+                <a href="details.html">Szczegóły</a>
+                <a href="registration.html">Rejestracja</a>
+            </h3>
+        </nav>
+    </section>
+    <hr>
+</header>
+
+<section id="content">
+    <header>
+        <h2>Rejestracja do kategorji drużynowej</h2>
+        <aside>
+            <p><em>Ctrl+click=reset uczęstnika, Alt+click=usuneińcie uczęstnika</em></p>
+        </aside>
+    </header>
+    <form id="form" method="post">
+        <div id="add">
+            <input id="btn_add" type="button" value="Dodaj uczęstnika">
+        </div>
+        <input type="submit" value="Zarejestruj">
+        <input type="reset" value="Zresetuj wszystko">
+    </form>
+</section>
+<hr>
+
+<footer>
+    <form>
+        <h3>Ustawienia</h3>
+        <p>
+            <label>Kolor tła</label>
+            <input type="color" id="bgCol" value="#FFFFFF">
+        </p>
+        <p>
+            <label>Kolor tekstu</label>
+            <input type="color" id="txtCol" value="#000000">
+        </p>
+        <p>
+            <label>Czciona</label>
+            <select id="txtFont">
+                <option value="Arial">Arial</option>
+                <option value="Calibri">Calibri</option>
+                <option value="Times New Roman">Times New Roman</option>
+            </select>
+        </p>
+
+        <input id="styleSet" type="button" value="Zastosuj">
+    </form>
+</footer>
+
+<script src="team_script.js"></script>
+</body>
+</html>

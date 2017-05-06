@@ -1,0 +1,151 @@
+@media screen {
+    body {
+        background-color: lemonchiffon;
+    }
+}
+
+@media all {
+    h1 {
+        font-variant: small-caps;
+        text-align: center;
+        overflow: hidden;
+        text-shadow: 0 0 tomato, 0 0 yellowgreen, 0 0 skyblue;
+        color: transparent;
+        transition: all 1s;
+        font-size: 30px;
+    }
+
+    h1:hover {
+        text-shadow: -400px 0 tomato,
+        400px 0 yellowgreen,
+        0 0 skyblue;
+    }
+
+    h2 {
+        font-size: 3em;
+        text-align: center;
+        color: cornflowerblue;
+    }
+
+    h3 {
+        font-size: 30px;
+        text-align: center;
+        font-family: Calibri;
+    }
+
+    .name {
+        font-size: 10pt;
+        text-align: center;
+        transition: all 1s;
+    }
+
+    .name:hover {
+
+        color: crimson;
+    }
+
+    article p {
+        line-height: 0.8;
+    }
+
+    .text100 {
+        font-size: 100%;
+    }
+
+    .text150 {
+        font-size: 150%;
+    }
+
+    .text_em {
+        font_size: 1em;
+    }
+
+    .text_percent {
+        font_size: 100%;
+    }
+
+    .text_pt {
+        font-size: 12pt;
+    }
+
+    .text_px {
+        font-size: 16px;
+    }
+
+    #jury table {
+        background-color: white;
+    }
+
+    #jury > table {
+        background-color: aqua;
+    }
+
+    #prizes table * {
+        border-style: dotted;
+        border-width: 2px;
+        border-radius: 5px;
+        background-color: white;
+    }
+
+    #prizes table {
+        border-style: none;
+        background-color: transparent;
+    }
+
+    #social_networks > footer {
+        height: 300px;
+        width: 100%;
+        border-style: solid;
+    }
+
+    .facebook {
+        border-style: solid;
+        padding: 10px;
+        position: relative;
+        top: 0;
+        left: 0;
+        float: right;
+
+    }
+
+    .youtube {
+        border-style: dotted;
+        margin: 20px;
+        position: fixed;
+        top: 0px;
+        right: 0px;
+    }
+
+    .twitter {
+        position: absolute;
+        right: 200px;
+        top: 50px;
+        clear: right;
+    }
+
+    input:required {
+        background-color: tomato;
+    }
+
+    :visited {
+        color: green;
+    }
+
+    a:not(:visited) {
+        color: red;
+    }
+
+    article:nth-child(2), article:nth-child(4) {
+        background-color: bisque;
+    }
+
+    [type="text"]{
+        color: blue;
+    }
+}
+
+@media print {
+    body h2 {
+        color: black;
+    }
+}

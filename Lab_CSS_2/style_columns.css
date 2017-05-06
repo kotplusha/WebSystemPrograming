@@ -1,0 +1,23 @@
+.column_article{
+    column-gap: 20px;
+    column-rule: black 2px solid;
+}
+@media (max-width: 480px)
+{
+    .column_article {
+        column-count: 1;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 800px)
+{
+    .column_article {
+        column-count: 2;
+    }
+}
+@media (min-width: 801px)
+{
+    .column_article {
+        column-count: 3;
+    }
+}
